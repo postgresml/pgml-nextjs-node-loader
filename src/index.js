@@ -18,7 +18,7 @@ export default function loader(content) {
 try {
   process.dlopen(module, ${JSON.stringify(
     outputPath || _compiler.options.output.path
-  )} + require("path").sep + __webpack_public_path__ + ${JSON.stringify(name)}${
+  )} + require("path").sep + ${JSON.stringify(name)}${
     typeof flags !== "undefined" ? `, ${JSON.stringify(options.flags)}` : ""
   });
 } catch (error) {
